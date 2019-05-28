@@ -112,10 +112,15 @@ body {
 }
 
 .project-text {
-	
+
 }
 
 .project-image {
 	height: 120px;
 	margin-right: 10px;
+}
+
+#email:after {
+	content: "Email: " attr(data-name) "@" attr(data-domain) "." attr(data-tld);
+	cursor: pointer;
 }
