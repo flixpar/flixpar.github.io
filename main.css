@@ -76,6 +76,7 @@ body {
 	height: auto;
 	width: 100%;
 	padding-top: 5vh;
+	overflow-x: scroll;
 }
 
 .content-container {
@@ -90,6 +91,31 @@ body {
 	margin-top: 0;
 }
 
-.content {
+.content-text {
 	
+}
+
+.project {
+	background-color: white;
+	padding: 10px;
+	display: flex;
+	flex-flow: row nowrap;
+	margin-bottom: 10px;
+}
+
+.project-content {
+	
+}
+
+.project-header {
+	margin: 0;
+}
+
+.project-text {
+	
+}
+
+.project-image {
+	height: 120px;
+	margin-right: 10px;
 }
