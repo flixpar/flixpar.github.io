@@ -97,24 +97,79 @@ a {
 	margin-bottom: 10px;
 }
 
-.project-content {
-
-}
-
 .project-header {
 	margin: 0;
-}
-
-.project-text {
-
 }
 
 .project-image {
 	height: 120px;
 	margin-right: 10px;
+	align-self: center;
 }
 
 #email:after {
 	content: "Email: " attr(data-name) "@" attr(data-domain) "." attr(data-tld);
 	cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+
+	#main {
+		height: auto;
+		width: 100vw;
+		display: flex;
+		flex-flow: column nowrap;
+	}
+
+	#sidebar {
+		width: 100vw;
+		height: auto;
+		display: flex;
+		flex-flow: row nowrap;
+		position: fixed;
+		top: 0;
+		background-color: white;
+		border-bottom: 1px solid lightgray;
+		overflow: hidden;
+		justify-content: space-between;
+	}
+
+	#title {
+		font-size: 70px;
+		padding: 30px;
+	}
+
+	#social {
+		padding: 30px;
+		height: auto;
+		width: auto;
+		justify-content: space-around;
+		font-size: 30px;
+	}
+
+	#nav {
+		display: none;
+	}
+
+	#felix {
+		display: none;
+	}
+
+	#line {
+		display: none;
+	}
+
+	#primary {
+		padding-top: 0;
+		margin-top: 10vh;
+	}
+
+	#aboutme-text {
+		font-size: 14px;
+	}
+
+	.project-image {
+		margin-right: 20px;
+	}
+
 }
