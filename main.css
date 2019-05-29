@@ -1,5 +1,6 @@
 body {
 	font-family: 'Source Code Pro', monospace;
+	font-size: 1rem;
 	margin: 0;
 }
 
@@ -17,15 +18,15 @@ a {
 
 #sidebar {
 	height: 100%;
-	width: 300px;
+	width: 20vw;
 }
 
 #title {
 	font-family: 'Bungee Hairline', cursive;
-	font-size: 50px;
+	font-size: 3vw;
 	text-align: left;
 	width: auto;
-	padding: 5vh 10% 10px 10%;
+	padding: 5vh 2vw 2vh 2vw;
 	margin: 0;
 	user-select: none;
 }
@@ -42,19 +43,9 @@ a {
 	flex-flow: column;
 }
 
-.github-logo {
-	height: 18px;
-	margin-right: 8px;
-}
-
-.icon {
-	height: 18px;
-	margin-right: 5px;
-}
-
-.linkedin-logo {
-	height: 18px;
-	margin-right: 8px;
+.github-logo, .social-logo, .icon {
+	height: 1em;
+	margin-right: 0.5em;
 }
 
 #nav {
@@ -102,8 +93,8 @@ a {
 }
 
 .project-image {
-	height: 120px;
-	margin-right: 10px;
+	width: 12vw;
+	margin-right: 15px;
 	align-self: center;
 }
 
@@ -122,6 +113,7 @@ a {
 	}
 
 	#sidebar {
+		max-width: initial;
 		width: 100vw;
 		height: auto;
 		display: flex;
@@ -171,10 +163,6 @@ a {
 	#primary {
 		padding-top: 0;
 		margin-top: 9vh;
-	}
-
-	#aboutme-text {
-		font-size: 14px;
 	}
 
 	.project-image {
