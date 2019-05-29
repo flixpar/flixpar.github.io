@@ -52,7 +52,7 @@ a {
 	margin-right: 5px;
 }
 
-#linkedin-logo {
+.linkedin-logo {
 	height: 18px;
 	margin-right: 8px;
 }
@@ -112,7 +112,7 @@ a {
 	cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
 
 	#main {
 		height: auto;
@@ -135,16 +135,25 @@ a {
 	}
 
 	#title {
-		font-size: 70px;
-		padding: 30px;
+		font-size: 8vw;
+		padding: 2vw;
 	}
 
 	#social {
-		padding: 30px;
+		padding: 2vw;
 		height: auto;
 		width: auto;
 		justify-content: space-around;
-		font-size: 30px;
+		font-size: 3vw;
+	}
+
+	.social-link {
+		display: inline-flex;
+	}
+
+	.social-logo {
+		height: 4vw;
+		margin-right: 1vw;
 	}
 
 	#nav {
@@ -161,7 +170,7 @@ a {
 
 	#primary {
 		padding-top: 0;
-		margin-top: 10vh;
+		margin-top: 9vh;
 	}
 
 	#aboutme-text {
