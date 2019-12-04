@@ -1,0 +1,22 @@
+<b>Title</b><br/>
+Deep Learning Detection of Sea Fan Neovascularization from Ultra-Widefield Fundus Images of Sickle Cell Hemoglobinopathy  
+<br/><br/>
+
+<b>Authors</b><br/>
+Sophie Cai, Felix Parker, Muller G. Urias, Morton F. Goldberg, Gregory D. Hager, Adrienne W. Scott
+<br/><br/>
+
+<b>Objective</b><br/>
+To train and evaluate the performance of a deep learning system for detecting sea fan neovascularization from ultra-widefield fundus images, with the goal of developing an automated screening aid for proliferative sickle cell retinopathy.
+<br/><br/>
+
+<b>Methods</b><br/>
+1131 deidentified ultra-widefield color fundus images were retrospectively collected from 181 adult nondiabetic patients with sickle cell hemoglobinopathy, no prior treatment for sickle cell retinopathy, and no other retinal vascular disease. Two independent masked retinal specialists graded images for presence or absence of sea fans; a third masked grader adjudicated discrepancies. The Inception-v4 convolutional neural network was used to train a model to classify images by presence or absence of sea fans, using the retinal specialist grades as the reference standard. Diagnostic performance was assessed by sensitivity, specificity, and area under the receiver operating characteristic curve.
+<br/><br/>
+ 
+<b>Results</b><br/>
+Characteristics of included patients were as follows: 93% African descent, 47% male, 64% Hemoglobin SS, 25% Hemoglobin SC, 8% Hemoglobin S/beta-thalassemia, 2% sickle cell trait. The mean age of patients at time of first included images was 36.3±12.4 years. 202 (18%) of images from 57 (31%) of patients had sea fan neovascularization. The two-way mixed-effects interclass correlation coefficient between the two primary retinal specialist graders was 0.771 (95% CI, 0.746-0.794), allowing for indeterminate grades subsequently adjudicated by the third retinal specialist grader. The model’s area under the receiving operating characteristic curve for detection of sea fan neovascularization was 0.952, with sensitivity 94.9% (95% CI, 82.7%-99.4%) and specificity 94.6% (95% CI, 90.3%-97.4%).
+<br/><br/>
+
+<b>Conclusions</b><br/>
+We report the first deep learning system with high sensitivity and specificity for detection of sea fan neovascularization. To our knowledge, this is the largest existing database of ultra-widefield fundus images of sickle cell hemoglobinopathy. With further prospective and external validation, this system may enhance automated screening for vision-threatening sickle cell retinopathy.

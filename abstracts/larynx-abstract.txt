@@ -1,0 +1,14 @@
+<b>Purpose</b><br/>
+Computer-aided analysis of laryngoscopy images has potential to add objectivity to subjective evaluations.  Automated classification of biomedical images is extremely challenging due to the precision required and the limited amount of annotated data available for training.  Convolutional neural networks (CNNs) have the potential to improve image analysis, and have demonstrated good performance in many settings.  This study applied machine-learning technologies to laryngoscopy to determine the accuracy of computer recognition of known laryngeal lesions found in patients post-extubation.
+<br/><br/>
+
+<b>Methods</b><br/>
+Using a convenience sample of laryngeal endoscopy images from post-extubation ICU patients, we apply CNN-based methods for analysis of granulomas and ulcerations to test potential machine-learning approaches for laryngoscopy analysis.
+<br/><br/>
+
+<b>Results</b><br/>
+A total of 127 images from 25 patients were manually annotated for presence and size of these lesions—100 for training, 27 for evaluating the system.  Machine-based analysis demonstrated per-pixel sensitivity of 82.0% and 62.8% for granulomas and ulcerations respectively; specificity was 99.0% and 99.6%.
+<br/><br/>
+
+<b>Conclusion</b><br/>
+This work demonstrates the feasibility of machine learning via CNN-based methods to add objectivity to laryngoscopy analysis, suggesting that CNN may aid in laryngoscopy analysis for other conditions in the future.

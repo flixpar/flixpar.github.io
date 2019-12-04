@@ -18,6 +18,30 @@
 		gtag('config', 'UA-21200231-1');
 	</script>
 
+	<script type="text/javascript">
+		function toggle_visibility(elem_id) {
+			var elem = document.getElementById(elem_id);
+			if (elem.innerHTML === "") {
+				load_content(elem_id);
+			}
+			if (elem.style.display === "block") {
+				elem.style.display = "none";
+			} else {
+				elem.style.display = "block";
+			}
+		}
+		function load_content(elem_id) {
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					document.getElementById(elem_id).innerHTML = this.responseText;
+				}
+			};
+			xhttp.open("GET", "".concat("abstracts/", elem_id, ".txt"), true);
+			xhttp.send();
+		}
+	</script>
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
@@ -61,6 +85,8 @@
 					<div class="project-content">
 						<h3 class="project-header">Identifying Sickle-Cell Retinopathy</h3>
 						<p class="project-text">Using deep learning to detect sickle-cell retinopathy from ultra-widefield fundus photography.</p>
+						<a class="abstract-link" onclick="toggle_visibility('retina-abstract')">&para; Abstract</a>
+						<p id="retina-abstract" class="abstract-text"></p>
 					</div>
 				</div>
 
@@ -71,6 +97,8 @@
 						<p class="project-text">Learning a heuristic for solving the traveling salesman problem using Monte Carlo tree search and deep reinforcement learning, inspired by AlphaZero.</p>
 						<a href="https://github.com/flixpar/AlphaTSP"><img src="imgs/github_logo.svg" class="github-logo">Code</a>
 						<a href="https://github.com/flixpar/AlphaTSP/raw/master/AlphaTSP.pdf"><img src="imgs/document_black.svg" class="icon">Paper</a>
+						<a class="abstract-link" onclick="toggle_visibility('alphatsp-abstract')">&para; Abstract</a>
+						<p id="alphatsp-abstract" class="abstract-text"></p>
 					</div>
 				</div>
 
@@ -103,6 +131,8 @@
 						<h3 class="project-header">Automated Classification and Segmentation of Laryngeal Lesions</h3>
 						<p class="project-text">Instance segmentation for detecting two types of laryngeal lesions using endoscopic video.</p>
 						<a href="https://github.com/flixpar/larynx-semseg"><img src="imgs/github_logo.svg" class="github-logo">Code</a>
+						<a class="abstract-link" onclick="toggle_visibility('larynx-abstract')">&para; Abstract</a>
+						<p id="larynx-abstract" class="abstract-text"></p>
 					</div>
 				</div>
 
@@ -112,6 +142,8 @@
 						<h3 class="project-header">Cataract Surgery Phase Identification</h3>
 						<p class="project-text">Contributed to machine learning system for recognizing the current phase in a video of cataract surgery as a step towards skill assessment.</p>
 						<a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2729808"><img src="imgs/document_black.svg" class="icon">Paper</a>
+						<a class="abstract-link" onclick="toggle_visibility('cataract-abstract')">&para; Abstract</a>
+						<p id="cataract-abstract" class="abstract-text"></p>
 					</div>
 				</div>
 
