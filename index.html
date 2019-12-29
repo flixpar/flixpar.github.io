@@ -75,7 +75,7 @@
 			<div class="content-container" id="aboutme">
 				<a name="aboutme"></a>
 				<h2 class="content-header">About Me</h2>
-				<p class="content-text" id="aboutme-text">I am a senior at Johns Hopkins University studying Computer Science and Applied Math. I am interested in computer vision, optimization, and reinforcement learning. Most of my current research is on applications of computer vision and deep learning to biomedical problems.</p>
+				<p class="content-text" id="aboutme-text">I am a senior at Johns Hopkins University studying Computer Science and Applied Math. I am interested in computer vision, machine learning, and optimization. Most of my research has focused on deep learning for human activity recognition and biomedical problems.</p>
 			</div>
 
 			<div class="content-container" id="projects-ongoing">
@@ -85,7 +85,7 @@
 				<div class="project" id="retina-project">
 					<img src="imgs/retina.png" class="project-image" id="retina-image">
 					<div class="project-content">
-						<h3 class="project-header">Identifying Sickle-Cell Retinopathy</h3>
+						<h3 class="project-header">Detecting Sickle-Cell Retinopathy</h3>
 						<p class="project-text">Using deep learning to detect sickle-cell retinopathy from ultra-widefield fundus photography.</p>
 						<a class="abstract-link" onclick="toggle_visibility('retina-abstract')">&para; Abstract</a>
 						<p id="retina-abstract" class="abstract-text"></p>
@@ -104,6 +104,14 @@
 					</div>
 				</div>
 
+				<div class="project" id="diva-project">
+					<img src="imgs/diva2.png" class="project-image" id="diva-image">
+					<div class="project-content">
+						<h3 class="project-header">Improving Realism and Diversity of Synthetic Activity Recognition Examples</h3>
+						<p class="project-text">Automating environment generation to produce better synthetic training examples for human activty recognition.</p>
+					</div>
+				</div>
+
 				<div class="project" id="graphmatching-project">
 					<img src="imgs/graph.svg" class="project-image" id="graphmatching-image">
 					<div class="project-content">
@@ -118,23 +126,23 @@
 				<a name="projects-completed"></a>
 				<h2 class="content-header">Completed Projects</h2>
 
-				<div class="project" id="actrec-project">
-					<img src="imgs/actrec.png" class="project-image" id="actrec-image">
-					<div class="project-content">
-						<h3 class="project-header">Human Activity Recognition</h3>
-						<p class="project-text">Segmenting and classifying activities in untrimmed third-person videos. Developed a method that builds spatio-temporal scene graphs and classifies them using a graph convolutional neural network.</p>
-						<a href="https://github.com/flixpar/ActivityRecognition"><img src="imgs/github_logo.svg" class="github-logo">Code</a>
-					</div>
-				</div>
-
 				<div class="project" id="larynx-project">
 					<img src="imgs/larynx_ann.png" class="project-image" id="larynx-image">
 					<div class="project-content">
 						<h3 class="project-header">Automated Classification and Segmentation of Laryngeal Lesions</h3>
-						<p class="project-text">Instance segmentation for detecting two types of laryngeal lesions using endoscopic video.</p>
+						<p class="project-text">Instance segmentation for detecting two types of laryngeal lesions using endoscopic video, with lesion tracking to track segmented regions across frames.</p>
 						<a href="https://github.com/flixpar/larynx-semseg"><img src="imgs/github_logo.svg" class="github-logo">Code</a>
 						<a class="abstract-link" onclick="toggle_visibility('larynx-abstract')">&para; Abstract</a>
 						<p id="larynx-abstract" class="abstract-text"></p>
+					</div>
+				</div>
+
+				<div class="project" id="actrec-project">
+					<img src="imgs/actrec.png" class="project-image" id="actrec-image">
+					<div class="project-content">
+						<h3 class="project-header">Structured Human Activity Recognition</h3>
+						<p class="project-text">Developed an approach to human activity recognition that exploits structure encoded by a spatio-temporal scene graph.</p>
+						<a href="https://github.com/flixpar/ActivityRecognition"><img src="imgs/github_logo.svg" class="github-logo">Code</a>
 					</div>
 				</div>
 

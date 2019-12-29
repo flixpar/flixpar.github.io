@@ -28,7 +28,7 @@ a {
 	width: auto;
 	padding: 5vh 2vw 2vh 2vw;
 	margin: 0;
-	user-select: none;
+	cursor: default;
 }
 
 #felix {
