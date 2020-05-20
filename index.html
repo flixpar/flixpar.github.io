@@ -75,40 +75,20 @@
 			<div class="content-container" id="aboutme">
 				<a name="aboutme"></a>
 				<h2 class="content-header">About Me</h2>
-				<p class="content-text" id="aboutme-text">I am a senior at Johns Hopkins University studying Computer Science and Applied Math. I am interested in computer vision, machine learning, and optimization. Most of my research has focused on deep learning for human activity recognition and biomedical problems.</p>
+				<p class="content-text" id="aboutme-text">I am an incoming PhD student in Systems Engineering at the <a href="https://systems.jhu.edu/" class="link">Center for Systems Science and Engineering</a> at Johns Hopkins University. I recently graduated with a BS in Computer Science and Applied Math from Johns Hopkins. I am interested in optimization and machine learning, particularly for applications in healthcare and medicine. Most of my previous work has focused on deep learning and computer vision for biomedical applications.</p>
 			</div>
 
 			<div class="content-container" id="projects-ongoing">
 				<a name="projects-ongoing"></a>
 				<h2 class="content-header">Ongoing Projects</h2>
 
-				<div class="project" id="retina-project">
-					<img src="imgs/retina.png" class="project-image" id="retina-image">
+				<div class="project" id="covid-project">
+					<img src="imgs/covid1.png" class="project-image" id="covid-image">
 					<div class="project-content">
-						<h3 class="project-header">Detecting Sickle-Cell Retinopathy</h3>
-						<p class="project-text">Using deep learning to detect sickle-cell retinopathy from ultra-widefield fundus photography.</p>
-						<a class="abstract-link" onclick="toggle_visibility('retina-abstract')">&para; Abstract</a>
-						<p id="retina-abstract" class="abstract-text"></p>
-					</div>
-				</div>
-
-				<div class="project" id="alphatsp-project">
-					<img src="imgs/tsp.png" class="project-image" id="alphatsp-image">
-					<div class="project-content">
-						<h3 class="project-header">AlphaTSP</h3>
-						<p class="project-text">Learning a heuristic for solving the traveling salesman problem using Monte Carlo tree search and deep reinforcement learning, inspired by AlphaZero.</p>
-						<a href="https://github.com/flixpar/AlphaTSP"><img src="imgs/github_logo.svg" class="github-logo">Code</a>
-						<a href="https://github.com/flixpar/AlphaTSP/raw/master/AlphaTSP.pdf"><img src="imgs/document_black.svg" class="icon">Paper</a>
-						<a class="abstract-link" onclick="toggle_visibility('alphatsp-abstract')">&para; Abstract</a>
-						<p id="alphatsp-abstract" class="abstract-text"></p>
-					</div>
-				</div>
-
-				<div class="project" id="diva-project">
-					<img src="imgs/diva2.png" class="project-image" id="diva-image">
-					<div class="project-content">
-						<h3 class="project-header">Improving Realism and Diversity of Synthetic Activity Recognition Examples</h3>
-						<p class="project-text">Automating environment generation to produce better synthetic training examples for human activty recognition.</p>
+						<h3 class="project-header">Resource Allocation for COVID-19</h3>
+						<p class="project-text">Building and solving models for optimal scarce resource and patient allocation to combat the COVID-19 pandemic.</p>
+						<a class="project-link" href="https://covid-resource-allocation.herokuapp.com/"><img src="imgs/globe-icon.svg" class="icon">Website</a>
+						<a class="project-link" href="https://github.com/flixpar/covid-resource-allocation"><img src="imgs/github_logo.svg" class="github-logo">Code</a>
 					</div>
 				</div>
 
@@ -117,6 +97,16 @@
 					<div class="project-content">
 						<h3 class="project-header">Graph Matching with Fuzzy Seeds</h3>
 						<p class="project-text">Exploring the utility of seeds in graph matching when some seeds can be incorrect.</p>
+					</div>
+				</div>
+
+				<div class="project" id="retina-project">
+					<img src="imgs/retina.png" class="project-image" id="retina-image">
+					<div class="project-content">
+						<h3 class="project-header">Detecting Sickle-Cell Retinopathy</h3>
+						<p class="project-text">Using deep learning to detect sickle-cell retinopathy from ultra-widefield fundus photography.</p>
+						<a class="project-link abstract-link" onclick="toggle_visibility('retina-abstract')">&para; Abstract</a>
+						<p id="retina-abstract" class="abstract-text"></p>
 					</div>
 				</div>
 
@@ -131,18 +121,9 @@
 					<div class="project-content">
 						<h3 class="project-header">Automated Classification and Segmentation of Laryngeal Lesions</h3>
 						<p class="project-text">Instance segmentation for detecting two types of laryngeal lesions using endoscopic video, with lesion tracking to track segmented regions across frames.</p>
-						<a href="https://github.com/flixpar/larynx-semseg"><img src="imgs/github_logo.svg" class="github-logo">Code</a>
-						<a class="abstract-link" onclick="toggle_visibility('larynx-abstract')">&para; Abstract</a>
+						<a class="project-link" href="https://github.com/flixpar/larynx-semseg"><img src="imgs/github_logo.svg" class="github-logo">Code</a>
+						<a class="project-link abstract-link" onclick="toggle_visibility('larynx-abstract')">&para; Abstract</a>
 						<p id="larynx-abstract" class="abstract-text"></p>
-					</div>
-				</div>
-
-				<div class="project" id="actrec-project">
-					<img src="imgs/actrec.png" class="project-image" id="actrec-image">
-					<div class="project-content">
-						<h3 class="project-header">Structured Human Activity Recognition</h3>
-						<p class="project-text">Developed an approach to human activity recognition that exploits structure encoded by a spatio-temporal scene graph.</p>
-						<a href="https://github.com/flixpar/ActivityRecognition"><img src="imgs/github_logo.svg" class="github-logo">Code</a>
 					</div>
 				</div>
 
@@ -151,9 +132,38 @@
 					<div class="project-content">
 						<h3 class="project-header">Cataract Surgery Phase Identification</h3>
 						<p class="project-text">Contributed to machine learning system for recognizing the current phase in a video of cataract surgery as a step towards skill assessment.</p>
-						<a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2729808"><img src="imgs/document_black.svg" class="icon">Paper</a>
-						<a class="abstract-link" onclick="toggle_visibility('cataract-abstract')">&para; Abstract</a>
+						<a class="project-link" href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2729808"><img src="imgs/document_black.svg" class="icon">Paper</a>
+						<a class="project-link abstract-link" onclick="toggle_visibility('cataract-abstract')">&para; Abstract</a>
 						<p id="cataract-abstract" class="abstract-text"></p>
+					</div>
+				</div>
+
+				<div class="project" id="alphatsp-project">
+					<img src="imgs/tsp.png" class="project-image" id="alphatsp-image">
+					<div class="project-content">
+						<h3 class="project-header">AlphaTSP</h3>
+						<p class="project-text">Learning a heuristic for solving the traveling salesman problem using Monte Carlo tree search and deep reinforcement learning, inspired by AlphaZero.</p>
+						<a class="project-link" href="https://github.com/flixpar/AlphaTSP"><img src="imgs/github_logo.svg" class="github-logo">Code</a>
+						<a class="project-link" href="https://github.com/flixpar/AlphaTSP/raw/master/AlphaTSP.pdf"><img src="imgs/document_black.svg" class="icon">Paper</a>
+						<a class="project-link abstract-link" onclick="toggle_visibility('alphatsp-abstract')">&para; Abstract</a>
+						<p id="alphatsp-abstract" class="abstract-text"></p>
+					</div>
+				</div>
+
+				<div class="project" id="diva-project">
+					<img src="imgs/diva2.png" class="project-image" id="diva-image">
+					<div class="project-content">
+						<h3 class="project-header">Improving Realism and Diversity of Synthetic Activity Recognition Examples</h3>
+						<p class="project-text">Automating environment generation to produce better synthetic training examples for human activty recognition.</p>
+					</div>
+				</div>
+
+				<div class="project" id="actrec-project">
+					<img src="imgs/actrec.png" class="project-image" id="actrec-image">
+					<div class="project-content">
+						<h3 class="project-header">Structured Human Activity Recognition</h3>
+						<p class="project-text">Developed an approach to human activity recognition that exploits structure encoded by a spatio-temporal scene graph.</p>
+						<a class="project-link" href="https://github.com/flixpar/ActivityRecognition"><img src="imgs/github_logo.svg" class="github-logo">Code</a>
 					</div>
 				</div>
 
