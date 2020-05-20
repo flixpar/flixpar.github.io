@@ -45,7 +45,11 @@ a {
 
 .github-logo, .social-logo, .icon {
 	height: 1em;
-	margin-right: 0.4em;
+	margin-right: 0.3em;
+}
+
+.project-link {
+	margin-right: 0.6em;
 }
 
 #nav {
@@ -85,8 +89,16 @@ a {
 	margin-top: 0;
 }
 
+#aboutme-text {
+	text-align: justify;
+	line-height: 1.4em;
+}
+
+.link {
+	color: #0f00b3;
+}
+
 .project {
-	background-color: white;
 	padding: 10px;
 	display: flex;
 	flex-flow: row nowrap;
