@@ -125,8 +125,7 @@ a {
 	display: none;
 }
 
-#email:after {
-	content: "Email: " attr(data-name) "@" attr(data-domain) "." attr(data-tld);
+#email {
 	cursor: pointer;
 }
 
