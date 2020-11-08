@@ -82,7 +82,8 @@ a {
 	width: 90%;
 	padding: 3%;
 	margin: 0 2% 2% 2%;
-	background-color: #f9f9f9;
+	background-color: #fff;
+	border-bottom: 1px solid lightgray;
 }
 
 .content-header {
