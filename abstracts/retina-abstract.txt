@@ -1,5 +1,5 @@
 <b>Title</b><br/>
-Deep Learning Detection of Sea Fan Neovascularization from Ultra-Widefield Fundus Images of Sickle Cell Hemoglobinopathy  
+Deep Learning Detection of Sea Fan Neovascularization From Ultra-Widefield Color Fundus Photographs of Patients With Sickle Cell Hemoglobinopathy
 <br/><br/>
 
 <b>Authors</b><br/>
