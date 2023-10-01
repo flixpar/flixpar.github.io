@@ -27,14 +27,16 @@
 			}
 		}
 		function load_content(elem_id) {
-			var xhttp = new XMLHttpRequest();
-			xhttp.onreadystatechange = function() {
-				if (this.readyState == 4 && this.status == 200) {
-					document.getElementById(elem_id).innerHTML = this.responseText;
-				}
-			};
-			xhttp.open("GET", "".concat("abstracts/", elem_id, ".txt"), true);
-			xhttp.send();
+			fetch(`abstracts/${elem_id}.txt`)
+				.then(response => {
+					return response.text();
+				})
+				.then(data => {
+					document.getElementById(elem_id).innerHTML = data;
+				})
+				.catch(error => {
+					console.log("There was a problem with the fetch operation:", error.message);
+				});
 		}
 	</script>
 
