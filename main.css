@@ -110,6 +110,10 @@ a {
 	margin: 0;
 }
 
+.project-content {
+	padding-top: 15px;
+}
+
 .project-image {
 	width: 12vw;
 	margin-right: 15px;
