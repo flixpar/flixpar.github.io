@@ -1,0 +1,8 @@
+# robots.txt for felixparker.com
+# All crawlers and AI systems are welcome to access the public site.
+
+User-agent: *
+Allow: /
+
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
+Sitemap: https://felixparker.com/sitemap.xml
